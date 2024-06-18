@@ -7,13 +7,12 @@ public class ItemSelect : MonoBehaviour
 
     void Select()
     {
-        //InventoryManager.Instance.Add(Item);
+        InventoryManager.Instance.Add(Item);
         Destroy(gameObject);
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("Getroffen");
         Select();
 
     } 
